@@ -7,6 +7,13 @@
 
 ## Soal 1
 >Carilah Standar Deviasi dari data selisih pasangan pengamatan tabel diatas
+```R
+data <- data.frame(responden,x,y)
+standar_deviasi <- sd(data$x - data$y)
+
+print("standar deviasi =  ")
+standar_deviasi
+```
 >
 ![1a](https://user-images.githubusercontent.com/90601251/170879976-12b79207-1069-4f46-a7c4-15cdbce2e341.png)
 
