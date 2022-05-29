@@ -18,6 +18,19 @@ standar_deviasi
 ![1a](https://user-images.githubusercontent.com/90601251/170879976-12b79207-1069-4f46-a7c4-15cdbce2e341.png)
 
 >Carilah nilai t (p-value)
+```R
+h <- data$x - data$y
+n <- 6
+s <- sd(h[1:6])
+mean1 <- mean(h)
+zbar <- mean(h[1:6])
+t <- ((zbar - mean1)/(s/sqrt(n)))
+p <- (2*pt(-abs(t),df <- n-1))
+
+print("t(p - value) = ")
+t
+p
+```
 >
 >![1b](https://user-images.githubusercontent.com/90601251/170880023-b719626b-bbb1-485b-82f2-8cad61de92be.png)
 
