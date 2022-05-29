@@ -1,20 +1,22 @@
 # No. 1
 library(BSDA)
 
-respon <- c(1,2,3,4,5,6,7,8,9)
-data_x <- c(78,75,67,77,70,72,78,74,77)
-data_y <- c(100,95,70,90,90,90,89,90,100)
+responden <- c(1,2,3,4,5,6,7,8,9)
+x <- c(78,75,67,77,70,72,78,74,77)
+y <- c(100,95,70,90,90,90,89,90,100)
 
-data_x
-data_y
+x
+y
 
-data <- data.frame(respon,data_x,data_y)
-standar_deviasi <- sd(data$data_x - data$data_y)
+# 1A
+data <- data.frame(responden,x,y)
+standar_deviasi <- sd(data$x - data$y)
 
-print("hasil dari point A ")
+print("standar deviasi =  ")
 standar_deviasi
 
-h <- data$data_x - data$data_y
+# 1B
+h <- data$x - data$y
 n <- 6
 s <- sd(h[1:6])
 mean1 <- mean(h)
@@ -22,7 +24,7 @@ zbar <- mean(h[1:6])
 t <- ((zbar - mean1)/(s/sqrt(n)))
 p <- (2*pt(-abs(t),df <- n-1))
 
-print("hasil dari point B ")
+print("t(p - value) = ")
 t
 p
 
@@ -84,9 +86,4 @@ file_data
 grup1
 grup2
 grup3
-
-
-
-
-
 
