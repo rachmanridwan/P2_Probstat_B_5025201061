@@ -7,3 +7,7 @@
 
 ## Soal 1
 >Carilah Standar Deviasi dari data selisih pasangan pengamatan tabel diatas
+![1a](https://user-images.githubusercontent.com/90601251/170879976-12b79207-1069-4f46-a7c4-15cdbce2e341.png)
+
+
+>Carilah nilai t (p-value)
