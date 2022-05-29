@@ -14,3 +14,8 @@
 >
 >![1b](https://user-images.githubusercontent.com/90601251/170880023-b719626b-bbb1-485b-82f2-8cad61de92be.png)
 
+>Tentukanlah apakah terdapat pengaruh yang signifikan secara statistika
+dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan
+aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada
+pengaruh yang signifikan secara statistika dalam hal kadar saturasi
+oksigen , sebelum dan sesudah melakukan aktivitas 𝐴”
