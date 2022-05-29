@@ -46,23 +46,27 @@ z
 # No. 3
 library(mosaic)
 
-print("hasil dari point A ")
+# 3A
+print("Nilai dari H0 dan H1 adalah ")
 zH0 <- (3.64-0)/(1.67/sqrt(19))
 zH1 <- (2.79-0)/(1.32/sqrt(27))
 
 zH0
 zH1
 
+# 3B
 print("hasil dari point B ")
 tsum.test(mean.x=3.64, s.x = 1.67, n.x = 19,
           mean.y =2.79 , s.y = 1.32, n.y = 27,
           alternative = "greater")
 
+# 3C
 print("hasil dari point C ")
 uji_statistik <- plotDist(dist='t',df=2,  col="red")
 uji_statistik
 
-print("hasil dari point D ")
+# 3D
+print("Nilai kritikal = ")
 nilai_kritikal <- qchisq(p = 0.05, df = 2, lower.tail=FALSE)
 nilai_kritikal
 # =====================================================
