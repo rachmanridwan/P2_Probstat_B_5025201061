@@ -28,6 +28,25 @@ print("t(p - value) = ")
 t
 p
 
+# 1C
+xbar = mean(y)          
+mu0 = mean(x)
+s = sd(y)
+n = length(y)
+t = (xbar-mu0)/(s/sqrt(n)) 
+t
+
+alpha = 0.05 
+t.half.alpha = qt(1-alpha/2, df=n-1) 
+c(-t.half.alpha, t.half.alpha)
+
+pval <- 2*pt(t, df=n-1)
+pval
+
+cat("karena pvalue > 0,05 atau pvalue>alpha maka keputusan gagal tolak H0","\n",
+    "tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas")
+
+
 t.test(h, alternative = 'two.sided',mu = mean1)
 # =====================================================
 
@@ -55,13 +74,13 @@ zH0
 zH1
 
 # 3B
-print("hasil dari point B ")
+print("Hitungan sampel statistik adalah ")
 tsum.test(mean.x=3.64, s.x = 1.67, n.x = 19,
           mean.y =2.79 , s.y = 1.32, n.y = 27,
           alternative = "greater")
 
 # 3C
-print("hasil dari point C ")
+print("Hasil uji statistik dengan df = 2 ")
 uji_statistik <- plotDist(dist='t',df=2,  col="red")
 uji_statistik
 
@@ -90,4 +109,3 @@ file_data
 grup1
 grup2
 grup3
-
